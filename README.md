@@ -1,6 +1,6 @@
 # Parking Reservation API - Laravel
 
-This repo is functionality complete, PRs and issues are welcome
+This repo is functionally complete, PRs and issues are welcome
 
 ---
 

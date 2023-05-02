@@ -1,0 +1,79 @@
+name: Profile
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/profile
+    metadata:
+      groupName: Profile
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'View profile information'
+      description: 'This endpoint allows you to view your profile information.'
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+    uri: api/v1/profile
+    metadata:
+      groupName: Profile
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update profile information'
+      description: 'This endpoint allows you to update your profile information.'
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
+        required: false
+        example: x
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: false
+        example: karen.hegmann@example.com
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: x
+      email: karen.hegmann@example.com
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

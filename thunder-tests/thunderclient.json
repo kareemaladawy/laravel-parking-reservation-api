@@ -1,0 +1,343 @@
+[
+  {
+    "_id": "ecc24a17-977a-4c71-8c68-78813d3d2d5c",
+    "colId": "b695f0d8-dcbc-40a5-b396-430a14b69cce",
+    "containerId": "",
+    "name": "index",
+    "url": "vehicle-parking-app-api.test/api/v1/vehicles",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-04-29T15:18:58.949Z",
+    "modified": "2023-04-30T21:00:21.513Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "2|VUBhubDJ3sNHT3FjJPDtT2kanbR79AYT8N2pYr1M"
+    },
+    "tests": []
+  },
+  {
+    "_id": "2539bc17-421a-46ce-882a-a12d43d0ce8c",
+    "colId": "b695f0d8-dcbc-40a5-b396-430a14b69cce",
+    "containerId": "",
+    "name": "show",
+    "url": "vehicle-parking-app-api.test/api/v1/vehicles/1",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-04-29T15:19:45.207Z",
+    "modified": "2023-04-30T21:01:17.781Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "2|VUBhubDJ3sNHT3FjJPDtT2kanbR79AYT8N2pYr1M"
+    },
+    "tests": []
+  },
+  {
+    "_id": "2c8e596c-8be6-4748-b0a2-45b90335d3fe",
+    "colId": "b695f0d8-dcbc-40a5-b396-430a14b69cce",
+    "containerId": "",
+    "name": "store",
+    "url": "vehicle-parking-app-api.test/api/v1/vehicles",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-04-29T15:20:27.610Z",
+    "modified": "2023-04-30T21:27:43.008Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "plate_number",
+          "value": "8777"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "2|VUBhubDJ3sNHT3FjJPDtT2kanbR79AYT8N2pYr1M"
+    },
+    "tests": []
+  },
+  {
+    "_id": "dca2b7e5-6459-4581-b549-a51b760492f9",
+    "colId": "b695f0d8-dcbc-40a5-b396-430a14b69cce",
+    "containerId": "",
+    "name": "put",
+    "url": "",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-04-29T15:30:08.387Z",
+    "modified": "2023-04-29T15:30:08.387Z",
+    "headers": []
+  },
+  {
+    "_id": "244ab7a8-b1d8-41d7-b0f1-522f27e3ed1f",
+    "colId": "b695f0d8-dcbc-40a5-b396-430a14b69cce",
+    "containerId": "",
+    "name": "put",
+    "url": "vehicle-parking-app-api.test/api/v1/vehicles/2",
+    "method": "PUT",
+    "sortNum": 50000,
+    "created": "2023-04-29T15:30:16.155Z",
+    "modified": "2023-04-30T21:00:41.349Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formencoded",
+      "raw": "",
+      "form": [
+        {
+          "name": "plate_number",
+          "value": "99009"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "2|VUBhubDJ3sNHT3FjJPDtT2kanbR79AYT8N2pYr1M"
+    },
+    "tests": []
+  },
+  {
+    "_id": "bab6521f-2728-4124-82d0-d7ead10fd708",
+    "colId": "b695f0d8-dcbc-40a5-b396-430a14b69cce",
+    "containerId": "",
+    "name": "delete",
+    "url": "vehicle-parking-app-api.test/api/v1/vehicles/2",
+    "method": "DELETE",
+    "sortNum": 60000,
+    "created": "2023-04-29T15:31:53.264Z",
+    "modified": "2023-04-29T15:32:17.868Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "5|VcvfRnNGgsLsSDBrRUVZJcz3FqoTfLkzBJl1dwo9"
+    },
+    "tests": []
+  },
+  {
+    "_id": "bfde222d-cd94-45e0-8926-4402f6dc890b",
+    "colId": "5b6a88bc-98f0-463e-ae67-e1d7542b2d4a",
+    "containerId": "",
+    "name": "index",
+    "url": "vehicle-parking-app-api.test/api/v1/zones",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-04-29T15:50:25.608Z",
+    "modified": "2023-04-29T15:50:55.324Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "83b5b1b2-a31a-4ce1-9655-48c2a414add4",
+    "colId": "727e0d1c-28e1-4a4b-a3f9-e3604603fea1",
+    "containerId": "",
+    "name": "start",
+    "url": "vehicle-parking-app-api.test/api/v1/parkings/start",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-29T16:24:23.279Z",
+    "modified": "2023-04-30T21:27:50.785Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "vehicle_id",
+          "value": "4"
+        },
+        {
+          "name": "zone_id",
+          "value": "1"
+        }
+      ]
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "2|VUBhubDJ3sNHT3FjJPDtT2kanbR79AYT8N2pYr1M"
+    },
+    "tests": []
+  },
+  {
+    "_id": "7d1af403-6415-46e5-a379-2be8b0438666",
+    "colId": "727e0d1c-28e1-4a4b-a3f9-e3604603fea1",
+    "containerId": "",
+    "name": "show",
+    "url": "vehicle-parking-app-api.test/api/v1/parkings/3",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-04-29T16:34:30.427Z",
+    "modified": "2023-04-29T17:02:53.761Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "5|VcvfRnNGgsLsSDBrRUVZJcz3FqoTfLkzBJl1dwo9"
+    },
+    "tests": []
+  },
+  {
+    "_id": "c20a2b95-73ef-42c0-989d-1be650dce168",
+    "colId": "727e0d1c-28e1-4a4b-a3f9-e3604603fea1",
+    "containerId": "",
+    "name": "stop",
+    "url": "vehicle-parking-app-api.test/api/v1/parkings/1",
+    "method": "PUT",
+    "sortNum": 30000,
+    "created": "2023-04-29T16:36:53.171Z",
+    "modified": "2023-04-30T21:43:59.346Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "2|VUBhubDJ3sNHT3FjJPDtT2kanbR79AYT8N2pYr1M"
+    },
+    "tests": []
+  },
+  {
+    "_id": "808fa96e-4986-45c9-9549-d72fb969df68",
+    "colId": "bcbf94b2-18e9-4607-858b-cfc7f8ce031f",
+    "containerId": "",
+    "name": "logout",
+    "url": "vehicle-parking-app-api.test/api/v1/auth/logout",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-30T12:37:14.712Z",
+    "modified": "2023-04-30T12:47:40.035Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "9|J2iTD0veIvjcRExjREkVAxOzzttzloQXhE57duH7"
+    },
+    "tests": []
+  },
+  {
+    "_id": "e3830492-0aa1-4dd3-8ed5-4b76b45331da",
+    "colId": "bcbf94b2-18e9-4607-858b-cfc7f8ce031f",
+    "containerId": "",
+    "name": "login",
+    "url": "vehicle-parking-app-api.test/api/v1/auth/login",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-04-30T12:38:10.410Z",
+    "modified": "2023-04-30T20:59:49.001Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "email",
+          "value": "john@smith.com"
+        },
+        {
+          "name": "password",
+          "value": "password"
+        }
+      ]
+    },
+    "tests": []
+  },
+  {
+    "_id": "81881b07-cebd-4e66-a3ad-31faf68f0650",
+    "colId": "bcbf94b2-18e9-4607-858b-cfc7f8ce031f",
+    "containerId": "",
+    "name": "register",
+    "url": "vehicle-parking-app-api.test/api/v1/auth/register",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-04-30T14:15:44.867Z",
+    "modified": "2023-04-30T14:16:41.648Z",
+    "headers": [
+      {
+        "name": "Accept",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "formdata",
+      "raw": "",
+      "form": [
+        {
+          "name": "name",
+          "value": "John Smith"
+        },
+        {
+          "name": "email",
+          "value": "john@smith.com"
+        },
+        {
+          "name": "password",
+          "value": "password"
+        },
+        {
+          "name": "password_confirmation",
+          "value": "password"
+        }
+      ]
+    },
+    "tests": []
+  }
+]

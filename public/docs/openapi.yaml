@@ -1,0 +1,318 @@
+openapi: 3.0.3
+info:
+  title: 'Vehicle Parking Reservation API'
+  description: 'Reserve, view, and stop parkings'
+  version: 1.0.0
+servers:
+  -
+    url: vehicle-parking-app-api.test
+paths:
+  /api/v1/auth/logout:
+    post:
+      summary: ''
+      operationId: postApiV1AuthLogout
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Auth
+      security: []
+  /api/v1/auth/register:
+    post:
+      summary: ''
+      operationId: postApiV1AuthRegister
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
+                  example: wbshsssqkpzn
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: waelchi.florida@example.org
+                password:
+                  type: string
+                  description: ''
+                  example: minus
+              required:
+                - name
+                - email
+                - password
+      security: []
+  /api/v1/auth/login:
+    post:
+      summary: ''
+      operationId: postApiV1AuthLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: moshe01@example.net
+                password:
+                  type: string
+                  description: ''
+                  example: maiores
+              required:
+                - email
+                - password
+      security: []
+  /api/v1/parkings/start:
+    post:
+      summary: 'Start/Reserve parking'
+      operationId: startReserveParking
+      description: 'This endpoint allows you to start/reserve parking.'
+      parameters: []
+      responses: {  }
+      tags:
+        - Parkings
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                vehicle_id:
+                  type: integer
+                  description: ''
+                  example: 20
+                zone_id:
+                  type: integer
+                  description: ''
+                  example: 5
+              required:
+                - vehicle_id
+                - zone_id
+      security: []
+  '/api/v1/parkings/{parking_id}':
+    get:
+      summary: 'View parking details'
+      operationId: viewParkingDetails
+      description: "This endpoint allows you to view the details of a parking that's currently in service."
+      parameters: []
+      responses: {  }
+      tags:
+        - Parkings
+      security: []
+    put:
+      summary: 'Stop parking'
+      operationId: stopParking
+      description: 'This endpoint allows you to stop parking.'
+      parameters: []
+      responses: {  }
+      tags:
+        - Parkings
+      security: []
+    parameters:
+      -
+        in: path
+        name: parking_id
+        description: 'The ID of the parking.'
+        example: 13
+        required: true
+        schema:
+          type: integer
+  /api/v1/password:
+    put:
+      summary: ''
+      operationId: putApiV1Password
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Passowrd
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                current_password:
+                  type: string
+                  description: ''
+                  example: voluptatem
+                password:
+                  type: string
+                  description: ''
+                  example: et
+              required:
+                - current_password
+                - password
+      security: []
+  /api/v1/profile:
+    get:
+      summary: 'View profile information'
+      operationId: viewProfileInformation
+      description: 'This endpoint allows you to view your profile information.'
+      parameters: []
+      responses: {  }
+      tags:
+        - Profile
+      security: []
+    put:
+      summary: 'Update profile information'
+      operationId: updateProfileInformation
+      description: 'This endpoint allows you to update your profile information.'
+      parameters: []
+      responses: {  }
+      tags:
+        - Profile
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 50 characters.'
+                  example: x
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: karen.hegmann@example.com
+      security: []
+  /api/v1/vehicles:
+    get:
+      summary: 'View your vehicles'
+      operationId: viewYourVehicles
+      description: 'This endpoint allows you to view all of your vehicles.'
+      parameters: []
+      responses: {  }
+      tags:
+        - Vehicles
+      security: []
+    post:
+      summary: 'Add a new vehicle'
+      operationId: addANewVehicle
+      description: 'This endpoint allows you to add a new vehicle.'
+      parameters: []
+      responses: {  }
+      tags:
+        - Vehicles
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                plate_number:
+                  type: string
+                  description: ''
+                  example: similique
+              required:
+                - plate_number
+      security: []
+  '/api/v1/vehicles/{id}':
+    get:
+      summary: 'View a specific vehicle'
+      operationId: viewASpecificVehicle
+      description: 'This endpoint allows you to view the details of a specific vehicle.'
+      parameters: []
+      responses: {  }
+      tags:
+        - Vehicles
+      security: []
+    put:
+      summary: 'Update a vehicle'
+      operationId: updateAVehicle
+      description: 'This endpoint allows you to update the details of a specific vehicle.'
+      parameters: []
+      responses: {  }
+      tags:
+        - Vehicles
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                plate_number:
+                  type: string
+                  description: ''
+                  example: ut
+              required:
+                - plate_number
+      security: []
+    delete:
+      summary: 'Remove a vehicle'
+      operationId: removeAVehicle
+      description: 'This endpoint allows you to remove a specific vehicle from your vehicles.'
+      parameters: []
+      responses: {  }
+      tags:
+        - Vehicles
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the vehicle.'
+        example: 18
+        required: true
+        schema:
+          type: integer
+  /api/v1/zones:
+    get:
+      summary: 'View zones'
+      operationId: viewZones
+      description: 'This endpoint allows you to view available zones to use for parking'
+      parameters: []
+      responses: {  }
+      tags:
+        - Zones
+      security: []
+tags:
+  -
+    name: Auth
+    description: ''
+  -
+    name: Parkings
+    description: ''
+  -
+    name: Passowrd
+    description: ''
+  -
+    name: Profile
+    description: ''
+  -
+    name: Vehicles
+    description: ''
+  -
+    name: Zones
+    description: ''
+components:
+  securitySchemes:
+    default:
+      type: http
+      scheme: bearer
+      description: ''
+security:
+  -
+    default: []

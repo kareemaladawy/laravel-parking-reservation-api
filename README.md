@@ -1,4 +1,4 @@
-# ![Parking Reservation API - Laravel]
+# Parking Reservation API - Laravel
 
 This repo is functionality complete, PRs and issues are welcome
 

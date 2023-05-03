@@ -6,6 +6,9 @@ This repo is functionally complete, PRs and issues are welcome
 
 # Getting started
 
+### ERD
+![drawSQL-vehicle-parking-api-export-2023-05-03](https://user-images.githubusercontent.com/62149929/235961695-1309c338-40cc-4d78-b860-7b2f8cc993d3.png)
+
 ## Installation
 
     composer install

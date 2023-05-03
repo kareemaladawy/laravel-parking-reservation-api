@@ -13,7 +13,6 @@ This repo is functionally complete, PRs and issues are welcome
     php artisan key:generate
     php artisan migrate
     php artisan serve
-    php artisan serve
 
 The api can now be accessed at
 

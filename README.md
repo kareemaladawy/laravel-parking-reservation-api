@@ -6,6 +6,9 @@
 ## Overview
 This Laravel API allows users to view available parking zones, register, view, update, and remove their vehicles, start, view, and stop their parkings.
 
+### ERD
+![drawSQL-vehicle-parking-api-export-2023-05-03](https://user-images.githubusercontent.com/62149929/235961695-1309c338-40cc-4d78-b860-7b2f8cc993d3.png)
+
 ## Features
 - View available parking zones
 - Register, view, update, and remove vehicles

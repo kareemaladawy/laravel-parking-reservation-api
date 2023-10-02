@@ -83,9 +83,9 @@ To get a parking by ID, send a GET request to the ```/parkings/{parking}``` endp
 
 ```curl -X GET http://localhost:8000/api/v1/parkings/1```
 
-To get a parking by ID, send a GET request to the ```/parkings/{parking}``` endpoint, where {parking} is the ID of the parking:
+To stop a parking, send a PUT request to the ```/parkings/{parking}``` endpoint, where {parking} is the ID of the parking:
 
-```curl -X DELETE http://localhost:8000/api/v1/parkings/1```
+```curl -X PUT http://localhost:8000/api/v1/parkings/1```
 
 To register a new user, send a POST request to the ```/auth/register``` endpoint with the following JSON body:
 ``` 

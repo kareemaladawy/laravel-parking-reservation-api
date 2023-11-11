@@ -111,7 +111,7 @@ To log out a user, send a POST request to the ```/auth/logout``` endpoint:
 This Laravel API provides a comprehensive set of features for managing parking reservations. It is easy to use and can be customized to meet your specific needs.
 ## Authors
 
-- [@kareemalaadwy](https://www.github.com/kareemalaadwy)
+- [@kareemaladawy](https://www.github.com/kareemaladawy)
 
 
 ## Contributing
